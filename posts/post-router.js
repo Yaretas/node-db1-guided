@@ -14,7 +14,7 @@ router.get("/", (req, res) => {
       res
         .status(200)
         .json({
-          data: "rows",
+          data: rows
         })
         .catch((error) => {
           res.status(500).json({
